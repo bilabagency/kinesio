@@ -17,11 +17,11 @@
     t.src=v;s=b.getElementsByTagName(e)[0];
     s.parentNode.insertBefore(t,s)}(window, document,'script',
     'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '886518037420320');
+    fbq('init', '2111903182987463');
     fbq('track', 'PageView');
     </script>
     <noscript><img height="1" width="1" style="display:none"
-    src="https://www.facebook.com/tr?id=886518037420320&ev=PageView&noscript=1"
+    src="https://www.facebook.com/tr?id=2111903182987463&ev=PageView&noscript=1"
     /></noscript>
     <script>
         tailwind.config = {
@@ -29,7 +29,6 @@
                 extend: {
                     fontFamily: { sans: ['Montserrat', 'sans-serif'] },
                     colors: {
-                        // NUEVOS COLORES PARA KINESIOLOGÍA
                         brandAccent: '#00BFA5', // Turquesa/Cyan sanitario
                         brandPrimary: '#003366', // Azul profundo institucional
                         brandBg: '#F8FAFC',
@@ -41,7 +40,6 @@
     </script>
     <style>
         html { scroll-behavior: smooth; }
-        /* Imagen de fondo actualizada a temática de salud/fisioterapia */
         .hero-overlay {
             background-image: linear-gradient(to right, rgba(0, 51, 102, 0.9) 0%, rgba(0, 51, 102, 0.6) 50%, rgba(0, 0, 0, 0.3) 100%), 
                             url('https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
@@ -365,7 +363,10 @@
                 form.reset();
                 togglePopup(false);
                 updateCaptchas();
-                alert('¡Excelente! Tus datos fueron recibidos correctamente. Un asesor se pondrá en contacto a la brevedad.');
+                
+                // REDIRECCIÓN CONFIRMADA
+                alert('¡Excelente! Tus datos fueron recibidos. Te redirigiremos al programa de la carrera.');
+                window.location.href = 'https://kinesiologia.carrerasjerarquicos.com/programa.html';
 
             } catch (err) {
                 console.error('Error en el envío:', err);
